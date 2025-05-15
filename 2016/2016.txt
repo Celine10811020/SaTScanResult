@@ -1,0 +1,166 @@
+                                 _____________________________
+
+                                        SaTScan v10.2.5
+                                 _____________________________
+
+
+Program run on: Thu May 15 01:23:33 2025
+
+Purely Spatial analysis
+scanning for clusters with high rates
+using the Discrete Poisson model.
+_______________________________________________________________________________________________
+
+SUMMARY OF DATA
+
+Study period.......................: 2000/1/1 to 2000/12/31
+Number of locations................: 351
+Population, averaged over time.....: 23224406
+Total number of cases..............: 55
+Annual cases / 100000..............: 0.2
+_______________________________________________________________________________________________
+
+CLUSTERS DETECTED
+
+1.Location IDs included.: 219, 229, 221, 226, 216, 224, 232, 223, 227, 237, 284, 238, 239, 247,
+                          217, 279, 246, 225, 218, 220, 235, 280, 230, 242, 251, 276, 277, 278,
+                          236, 228, 274, 248, 273, 275, 215, 269, 249, 245, 270, 271, 250, 234,
+                          119, 272, 241, 120, 253, 252, 244, 214, 261, 110, 243, 281, 282, 260,
+                          254, 283, 233, 255, 259, 111, 256, 240, 265, 173, 266, 257, 258, 170,
+                          165, 264, 231, 140, 108, 222, 262, 156, 146, 161, 158, 139, 166
+  Overlap with clusters.: No Overlap
+  Coordinates / radius..: (22.479807 N, 120.518056 E) / 66.57 km
+  Span..................: 127.03 km
+  Gini Cluster..........: Yes
+  Population............: 4497794
+  Number of cases.......: 46
+  Expected cases........: 10.65
+  Annual cases / 100000.: 1.0
+  Observed / expected...: 4.32
+  Relative risk.........: 21.28
+  Log likelihood ratio..: 52.940889
+  P-value...............: < 0.00000000000000001
+
+Note: The coordinates file contains location IDs with identical coordinates that were combined
+into one location. In the optional output files, combined locations are represented by a single
+location ID as follows:
+-----------------------------------------------------------------------------------------------
+277 : 278
+_______________________________________________________________________________________________
+
+PARAMETER SETTINGS
+
+Input
+-----
+  Case File        : E:\3\Melioidosis Case\MelioidosisData.csv
+  Population File  : E:\3\Population\Total.csv
+  Time Precision   : None
+  Start Time       : 2000/1/1
+  End Time         : 2000/12/31
+  Coordinates File : E:\3\XY\XY.csv
+  Coordinates      : Latitude/Longitude
+
+Analysis
+--------
+  Type of Analysis    : Purely Spatial
+  Probability Model   : Discrete Poisson
+  Scan for Areas with : High Rates
+
+Output
+------
+  Main Results File       : E:\3\SaTScan\2016\2016.txt
+  Cluster File            : E:\3\SaTScan\2016\2016.col.txt
+  Google Earth File       : E:\3\SaTScan\2016\2016.kml
+  Google Maps File        : E:\3\SaTScan\2016\2016.clustermap.html
+  Shapefile (Cluster)     : E:\3\SaTScan\2016\2016.col.shp
+  Cartesian Graph File    : E:\3\SaTScan\2016\2016.cluster.html
+  Cluster File            : E:\3\SaTScan\2016\2016.col.dbf
+  Stratified Cluster File : E:\3\SaTScan\2016\2016.sci.txt
+  Stratified Cluster File : E:\3\SaTScan\2016\2016.sci.dbf
+  Location File           : E:\3\SaTScan\2016\2016.gis.txt
+  Location File           : E:\3\SaTScan\2016\2016.gis.dbf
+  Shapefile (Locations)   : E:\3\SaTScan\2016\2016.gis.shp
+  Risk Estimates File     : E:\3\SaTScan\2016\2016.rr.txt
+  Risk Estimates File     : E:\3\SaTScan\2016\2016.rr.dbf
+  Simulated LLRs File     : E:\3\SaTScan\2016\2016.llr.txt
+  Simulated LLRs File     : E:\3\SaTScan\2016\2016.llr.dbf
+
+Data Checking
+-------------
+  Temporal Data Check     : Check to ensure that all cases and controls are within the specified temporal study period.
+  Geographical Data Check : Check to ensure that all observations (cases, controls and populations) are within the specified geographical area.
+
+Spatial Neighbors
+-----------------
+  Use Non-Euclidean Neighbors file     : No
+  Use Meta Locations File              : No
+  Observations with Multiple Locations : One location per observation.
+
+Locations Network
+-----------------
+  Use Locations Network File : No
+
+Spatial Window
+--------------
+  Maximum Spatial Cluster Size : 50 percent of population at risk
+  Window Shape                 : Circular
+  Isotonic Scan                : No
+
+Cluster Restrictions
+--------------------
+  Minimum Cases in Cluster for High Rates : 2
+  Restrict High Rate Clusters             : No
+
+Space And Time Adjustments
+--------------------------
+  Adjust for known relative risks : No
+
+Inference
+---------
+  P-Value Reporting                  : Default Combination
+  Number of Replications             : 999
+  Adjusting for More Likely Clusters : No
+
+Cluster Drilldown
+-----------------
+  Standard Drilldown on Detected Clusters : No
+
+Miscellaneous Analysis
+----------------------
+  Report Oliveira's F : No
+
+Spatial Output
+--------------
+  Automatically Launch Map                  : Yes
+  Compress KML File into KMZ File           : No
+  Include All Location IDs in the Clusters  : Yes
+  Cluster Location Threshold - Separate KML : 1000
+  Report Hierarchical Clusters              : Yes
+  Criteria for Reporting Secondary Clusters : No Geographical Overlap
+  Report Gini Optimized Cluster Collection  : Yes
+  Gini Index Based Collection Reporting     : Optimal Only
+  Report Gini Index Cluster Coefficents     : No
+  Restrict Reporting to Smaller Clusters    : No
+
+Other Output
+------------
+  Report Critical Values     : No
+  Report Monte Carlo Rank    : No
+  Print ASCII Column Headers : No
+  User Defined Title         : 
+
+Notifications
+-------------
+  Always Send Email                      : No
+  Send Email With Results Meeting Cutoff : No
+
+Run Options
+-----------
+  Processor Usage   : All Available Processors
+  Suppress Warnings : No
+  Logging Analysis  : No
+_______________________________________________________________________________________________
+
+Program completed  : Thu May 15 01:23:38 2025
+Total Running Time : 5 seconds
+Processor Usage    : 12 processors

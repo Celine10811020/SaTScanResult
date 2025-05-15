@@ -1,0 +1,206 @@
+                                 _____________________________
+
+                                        SaTScan v10.2.5
+                                 _____________________________
+
+
+Program run on: Thu May 15 02:08:19 2025
+
+Purely Spatial analysis
+scanning for clusters with high rates
+using the Discrete Poisson model.
+_______________________________________________________________________________________________
+
+SUMMARY OF DATA
+
+Study period.......................: 2000/1/1 to 2000/12/31
+Number of locations................: 351
+Population, averaged over time.....: 23074416
+Total number of cases..............: 359
+Annual cases / 100000..............: 1.6
+_______________________________________________________________________________________________
+
+CLUSTERS DETECTED
+
+1.Location IDs included.: 259, 260, 256, 258, 281, 257, 261, 252, 255, 140, 272, 253, 146, 165,
+                          271
+  Overlap with clusters.: No Overlap
+  Coordinates / radius..: (22.822246 N, 120.228051 E) / 16.84 km
+  Span..................: 32.04 km
+  Gini Cluster..........: Yes
+  Population............: 1016864
+  Number of cases.......: 204
+  Expected cases........: 15.82
+  Annual cases / 100000.: 20.0
+  Observed / expected...: 12.89
+  Relative risk.........: 28.55
+  Log likelihood ratio..: 398.388619
+  P-value...............: < 0.00000000000000001
+
+2.Location IDs included.: 222, 240, 231, 233, 234
+  Overlap with clusters.: No Overlap
+  Coordinates / radius..: (21.985316 N, 120.763254 E) / 30.75 km
+  Span..................: 30.75 km
+  Gini Cluster..........: Yes
+  Population............: 57606
+  Number of cases.......: 17
+  Expected cases........: 0.90
+  Annual cases / 100000.: 29.4
+  Observed / expected...: 18.97
+  Relative risk.........: 19.86
+  Log likelihood ratio..: 34.290544
+  P-value...............: 0.0000000000013
+
+3.Location IDs included.: 223, 221, 284, 226, 219, 238, 247, 279, 229, 232, 237, 216, 224, 280,
+                          220, 246, 239, 276, 251, 277, 278, 274, 227, 273, 275, 218, 269, 235,
+                          248, 249
+  Overlap with clusters.: No Overlap
+  Coordinates / radius..: (22.517190 N, 120.450143 E) / 22.42 km
+  Span..................: 41.60 km
+  Gini Cluster..........: Yes
+  Population............: 2290384
+  Number of cases.......: 62
+  Expected cases........: 35.63
+  Annual cases / 100000.: 2.7
+  Observed / expected...: 1.74
+  Relative risk.........: 1.89
+  Log likelihood ratio..: 9.076572
+  P-value...............: 0.014
+
+4.Location IDs included.: 263
+  Overlap with clusters.: No Overlap
+  Coordinates / radius..: (23.116550 N, 120.623289 E) / 0 km
+  Span..................: 0 km
+  Gini Cluster..........: No
+  Population............: 6444
+  Number of cases.......: 2
+  Expected cases........: 0.10
+  Annual cases / 100000.: 31.0
+  Observed / expected...: 19.95
+  Relative risk.........: 20.05
+  Log likelihood ratio..: 4.091605
+  P-value...............: 0.854
+
+Note: The coordinates file contains location IDs with identical coordinates that were combined
+into one location. In the optional output files, combined locations are represented by a single
+location ID as follows:
+-----------------------------------------------------------------------------------------------
+277 : 278
+_______________________________________________________________________________________________
+
+PARAMETER SETTINGS
+
+Input
+-----
+  Case File        : E:\3\Melioidosis Case\CumulativeCases_ByIndex_2003_2025.csv
+  Population File  : E:\3\Population\Total.csv
+  Time Precision   : None
+  Start Time       : 2000/1/1
+  End Time         : 2000/12/31
+  Coordinates File : E:\3\XY\XY.csv
+  Coordinates      : Latitude/Longitude
+
+Analysis
+--------
+  Type of Analysis    : Purely Spatial
+  Probability Model   : Discrete Poisson
+  Scan for Areas with : High Rates
+
+Output
+------
+  Main Results File       : E:\3\SaTScan\~2013\~2013.txt
+  Cluster File            : E:\3\SaTScan\~2013\~2013.col.txt
+  Google Earth File       : E:\3\SaTScan\~2013\~2013.kml
+  Google Maps File        : E:\3\SaTScan\~2013\~2013.clustermap.html
+  Shapefile (Cluster)     : E:\3\SaTScan\~2013\~2013.col.shp
+  Cartesian Graph File    : E:\3\SaTScan\~2013\~2013.cluster.html
+  Cluster File            : E:\3\SaTScan\~2013\~2013.col.dbf
+  Stratified Cluster File : E:\3\SaTScan\~2013\~2013.sci.txt
+  Stratified Cluster File : E:\3\SaTScan\~2013\~2013.sci.dbf
+  Location File           : E:\3\SaTScan\~2013\~2013.gis.txt
+  Location File           : E:\3\SaTScan\~2013\~2013.gis.dbf
+  Shapefile (Locations)   : E:\3\SaTScan\~2013\~2013.gis.shp
+  Risk Estimates File     : E:\3\SaTScan\~2013\~2013.rr.txt
+  Risk Estimates File     : E:\3\SaTScan\~2013\~2013.rr.dbf
+  Simulated LLRs File     : E:\3\SaTScan\~2013\~2013.llr.txt
+  Simulated LLRs File     : E:\3\SaTScan\~2013\~2013.llr.dbf
+
+Data Checking
+-------------
+  Temporal Data Check     : Check to ensure that all cases and controls are within the specified temporal study period.
+  Geographical Data Check : Check to ensure that all observations (cases, controls and populations) are within the specified geographical area.
+
+Spatial Neighbors
+-----------------
+  Use Non-Euclidean Neighbors file     : No
+  Use Meta Locations File              : No
+  Observations with Multiple Locations : One location per observation.
+
+Locations Network
+-----------------
+  Use Locations Network File : No
+
+Spatial Window
+--------------
+  Maximum Spatial Cluster Size : 50 percent of population at risk
+  Window Shape                 : Circular
+  Isotonic Scan                : No
+
+Cluster Restrictions
+--------------------
+  Minimum Cases in Cluster for High Rates : 2
+  Restrict High Rate Clusters             : No
+
+Space And Time Adjustments
+--------------------------
+  Adjust for known relative risks : No
+
+Inference
+---------
+  P-Value Reporting                  : Default Combination
+  Number of Replications             : 999
+  Adjusting for More Likely Clusters : No
+
+Cluster Drilldown
+-----------------
+  Standard Drilldown on Detected Clusters : No
+
+Miscellaneous Analysis
+----------------------
+  Report Oliveira's F : No
+
+Spatial Output
+--------------
+  Automatically Launch Map                  : Yes
+  Compress KML File into KMZ File           : No
+  Include All Location IDs in the Clusters  : Yes
+  Cluster Location Threshold - Separate KML : 1000
+  Report Hierarchical Clusters              : Yes
+  Criteria for Reporting Secondary Clusters : No Geographical Overlap
+  Report Gini Optimized Cluster Collection  : Yes
+  Gini Index Based Collection Reporting     : Optimal Only
+  Report Gini Index Cluster Coefficents     : No
+  Restrict Reporting to Smaller Clusters    : No
+
+Other Output
+------------
+  Report Critical Values     : No
+  Report Monte Carlo Rank    : No
+  Print ASCII Column Headers : No
+  User Defined Title         : 
+
+Notifications
+-------------
+  Always Send Email                      : No
+  Send Email With Results Meeting Cutoff : No
+
+Run Options
+-----------
+  Processor Usage   : All Available Processors
+  Suppress Warnings : No
+  Logging Analysis  : No
+_______________________________________________________________________________________________
+
+Program completed  : Thu May 15 02:08:23 2025
+Total Running Time : 4 seconds
+Processor Usage    : 12 processors

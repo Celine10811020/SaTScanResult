@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>SaTScan 結果總覽</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+    h2 {
+      margin-top: 1.5em;
+    }
+    ul {
+      line-height: 1.6;
+    }
+    pre {
+      background: #f0f0f0;
+      padding: 1em;
+      border: 1px solid #ccc;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>SaTScan 分析結果連結總覽</h1>
+
+  <!-- 自動產生區塊 -->
+  <script>
+    const years = Array.from({length: 23}, (_, i) => 2003 + i); // 2003 ~ 2025
+    const folders = [...years.map(y => y.toString()), ...years.map(y => `~${y}`)];
+
+    function toggleText(folder) {
+      const container = document.getElementById(`txt-${folder}`);
+      if (container.style.display === 'block') {
+        container.style.display = 'none';
+        container.innerHTML = '';
+      } else {
+        fetch(`${folder}/${folder}.txt`)
+          .then(response => response.text())
+          .then(data => {
+            container.innerHTML = `<pre>${data}</pre>`;
+            container.style.display = 'block';
+          })
+          .catch(() => {
+            container.innerHTML = '<pre>無法載入 TXT 檔案</pre>';
+            container.style.display = 'block';
+          });
+      }
+    }
+
+    folders.forEach(folder => {
+      document.write(`<h2>${folder}</h2>`);
+      document.write('<ul>');
+      document.write(`<li><a href="${folder}/${folder}.cluster.html" target="_blank">${folder}.cluster.html</a></li>`);
+      document.write(`<li><a href="${folder}/${folder}.clustermap.html" target="_blank">${folder}.clustermap.html</a></li>`);
+      document.write(`<li><a href="javascript:toggleText('${folder}')">切換顯示 ${folder}.txt</a></li>`);
+      document.write('</ul>');
+      document.write(`<div id="txt-${folder}" style="display:none"></div>`);
+    });
+  </script>
+</body>
+</html>
