@@ -28,7 +28,7 @@
   <!-- 自動產生區塊 -->
   <script>
     const years = Array.from({length: 23}, (_, i) => 2003 + i); // 2003 ~ 2025
-    const folders = [...years.map(y => y.toString()), ...years.map(y => `_${y}`)];
+    const folders = [...years.map(y => y.toString()), ...years.map(y => `to${y}`)];
 
     function toggleText(folder) {
       const container = document.getElementById(`txt-${folder}`);
